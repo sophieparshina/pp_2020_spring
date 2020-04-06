@@ -51,14 +51,12 @@ TEST(Hoare_Quick_Sort_OpenMP, Can_Sort_Opposite_Elements) {
   Copy_elements(arr, arr2, N);
   Parallel_Division_Sort(arr, N, THREADS_NUMBER);
   qHoareSort(arr2, 0, N - 1);
-  //std::sort(&arr2[0], &arr2[N]);
   ASSERT_EQ((int)std::equal(&arr[0], &arr[N], &arr2[0]), 1);
 }
 TEST(Hoare_Quick_Sort_OpenMP, Can_Sort_Already_Sorted_Elements) {
   double* arr = new double[N];
   Get_Random_Array(arr, N);
   qHoareSort(arr, 0, N - 1);
-  //std::sort(&arr[0], &arr[N]);
   double* arr2 = new double[N];
   Copy_elements(arr, arr2, N);
   Parallel_Division_Sort(arr, N, THREADS_NUMBER);
@@ -68,7 +66,6 @@ TEST(Hoare_Quick_Sort_OpenMP, Can_Sort_Mixed_Array) {
   double* arr = new double[N];
   Get_Random_Array(arr, N);
   qHoareSort(arr, 0, N - 1);
-  //std::sort(&arr[0], &arr[N]);
   double* arr2 = new double[N];
   Copy_elements(arr, arr2, N);
   for (int i = 2; i < N; i += 3) {
