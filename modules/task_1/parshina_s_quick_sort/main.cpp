@@ -20,11 +20,11 @@ TEST(Hoare_Quick_Sort_sequential, Can_Sort_Empty_Array) {
     arr[i] = 0;
   }
   qHoareSort(arr, 0, n - 1);
-  double mult_element = 0.0;
+  double sum_element = 0.0;
   for (int i = 0; i < n; i++) {
-    mult_element += arr[i];
+    sum_element += arr[i];
   }
-  ASSERT_EQ(mult_element, 0);
+  ASSERT_EQ(sum_element, 0);
 }
 TEST(Hoare_Quick_Sort_sequential, Can_Sort_Fully_Double_Array) {
   int n = 100000;
