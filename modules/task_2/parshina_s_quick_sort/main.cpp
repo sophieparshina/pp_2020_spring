@@ -81,11 +81,10 @@ TEST(Hoare_Quick_Sort_OpenMP, Compare_Seq_and_Omp_Average_Time) {
   double omp_summary_time = 0;
 
   std::vector<bool> sorted;
-  double* arr = new double[N];  
+  double* arr = new double[N];
   double* arr2 = new double[N];
 
-  for (int threads = THREADS_NUMBER; threads > 0; --threads)
-  {
+  for (int threads = THREADS_NUMBER; threads > 0; --threads) {
     seq_summary_time = 0;
     omp_summary_time = 0;
 
