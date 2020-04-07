@@ -12,7 +12,7 @@
 
 #define N 100000
 #define THREADS_NUMBER 2
-#define TESTS_NUMBER 10
+#define TESTS_NUMBER 5
 
 TEST(Hoare_Quick_Sort_OpenMP, Can_Sort_Correctly) {
   double* arr = new double[N];
@@ -76,7 +76,7 @@ TEST(Hoare_Quick_Sort_OpenMP, Can_Sort_Mixed_Array) {
   Parallel_Division_Sort(arr, N, THREADS_NUMBER);
   ASSERT_EQ((int)std::equal(&arr[0], &arr[N], &arr2[0]), 1);
 }
-TEST(Hoare_Quick_Sort_OpenMP, Compare_Seq_and_Omp_Average_Time) {
+TEST(Hoare_Quick_Sort_OpenMP, DISABLED_Compare_Seq_and_Omp_Average_Time) {
   double seq_summary_time = 0;
   double omp_summary_time = 0;
 
