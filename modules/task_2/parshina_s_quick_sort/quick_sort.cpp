@@ -116,7 +116,7 @@ void Simple_Fusion(double * arr, int n, int m) {
 
 // Split array into subarrays based on the number of threads and get the ends of these segments
 std::vector<int> Get_Ends(int thread_num, int n, int threads_value) {
-  int sub_length = round(1.0 * n / threads_value);
+  int sub_length = round(n / (float)threads_value);
   if (thread_num < threads_value - 1) {
     std::vector<int> ends(2);
     ends[0] = thread_num * sub_length;
@@ -165,7 +165,7 @@ void Parallel_Division_Sort(double * arr, int n, int threads_value) {
   // wt = t();
 
   omp_set_num_threads(threads_value);
-  int sub_length = round(1.0 * n / threads_value);
+  int sub_length = round(n / (float)threads_value);
   std::vector<std::vector<int>> splitted_ends(threads_value);
   for (int i = 0; i < threads_value; ++i)
     splitted_ends[i] = Get_Ends(i, n, threads_value);
