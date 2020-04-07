@@ -1,11 +1,11 @@
 // Copyright 2020 Parshina Sophie
 #include <omp.h>
+#include <ctime>
+#include <cmath>
 #include <utility>
 #include <algorithm>
 #include <random>
 #include <vector>
-#include <ctime>
-#include <cmath>
 #include <iostream>
 #include "gtest/gtest.h"
 #include "../../../modules/task_2/parshina_s_quick_sort/quick_sort.h"
@@ -104,7 +104,6 @@ TEST(Hoare_Quick_Sort_OpenMP, Compare_Seq_and_Omp_Average_Time) {
 
       sorted.push_back(IsSorted(arr, N));
     }
-    
     std::cout << '\n' << '\n';
     std::cout << "Tests count:" << TESTS_NUMBER << '\n';
     std::cout << "Thread number: " << threads  << '\n';
