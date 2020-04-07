@@ -165,7 +165,7 @@ void Parallel_Division_Sort(double * arr, int n, int threads_value) {
   // wt = t();
 
   omp_set_num_threads(threads_value);
-  int sub_length = round(1.0 * n / threads_value);
+  // int sub_length = round(1.0 * n / threads_value);
   std::vector<std::vector<int>> splitted_ends(threads_value);
   for (int i = 0; i < threads_value; ++i)
     splitted_ends[i] = Get_Ends(i, n, threads_value);
