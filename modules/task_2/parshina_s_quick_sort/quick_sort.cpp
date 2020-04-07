@@ -105,7 +105,6 @@ void Simple_Fusion(double * arr, int n, int m) {
     tmp_index = a_index;
     tmp_max = n;
   }
-
   int delta = result_index - tmp_index;
 
   for (; tmp_index < tmp_max; ++tmp_index)
