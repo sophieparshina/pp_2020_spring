@@ -1,11 +1,11 @@
 // Copyright 2020 Parshina Sophie
+#include <omp.h>
 #include <utility>
 #include <algorithm>
 #include <random>
 #include <vector>
 #include <ctime>
 #include <cmath>
-#include <omp.h>
 #include <iostream>
 #include "gtest/gtest.h"
 #include "../../../modules/task_2/parshina_s_quick_sort/quick_sort.h"
