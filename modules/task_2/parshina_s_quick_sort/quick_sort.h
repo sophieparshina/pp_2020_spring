@@ -21,4 +21,4 @@ std::vector<int> Get_Ends(int thread_num, int n, int threads_value);
 // void dump_ends(vector<vector<int>> x, int l);
 // double t();
 void Parallel_Division_Sort(double * arr, int n, int threads_value = 2);
-#endif  // MODULES_TASK_2_PARSHINA_S_QUICK_SORT_QUICK_SORT_H_
+#endif // MODULES_TASK_2_PARSHINA_S_QUICK_SORT_QUICK_SORT_H_

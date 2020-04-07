@@ -104,7 +104,7 @@ TEST(Hoare_Quick_Sort_OpenMP, Compare_Seq_and_Omp_Average_Time) {
 
       sorted.push_back(IsSorted(arr, N));
     }
-    std::cout << '\n' << '\n';
+    std::cout << '\n';
     std::cout << "Tests count:" << TESTS_NUMBER << '\n';
     std::cout << "Thread number: " << threads  << '\n';
     std::cout << "Sequential average time: " << (seq_summary_time*1000) / TESTS_NUMBER << " ms \n";
