@@ -12,7 +12,7 @@
 
 #define N 100000
 #define THREADS_NUMBER 2
-#define TESTS_NUMBER 5
+#define TESTS_NUMBER 10
 
 TEST(Hoare_Quick_Sort_OpenMP, Can_Sort_Correctly) {
   double* arr = new double[N];
